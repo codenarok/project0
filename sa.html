@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        h1   {color: blue;
+             text-align:center;
+             text-transform: uppercase;
+             }
+         p    {color: rgb(25, 145, 22);
+         text-indent: 4%;
+         padding: 3%;}
+    </style>
+    <title>FootbaBlog</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">FootbaBlog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="pl.html">Premier League</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tl.html">Turkish League</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sa.html">Serie A</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact us </a>
+            </li>   
+          </ul>
+        </div>  
+      </nav>
+  <br>
+  <div class="container-md">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Team Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">1.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/juventus_logo.png"> Juventus</td>
+            <td class="points">63</td>
+        </tr>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">2.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/lazio_logo.png"> Lazio</td>
+            <td class="points">62</td>
+        </tr>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">3.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/inter_milan_logo.png"> Inter Milan</td>
+            <td class="points">54</td>
+        </tr>
+    <tbody>
+</table>
+<h1>Serie A teams start group training</h1>
+        <p>Now that the medical protocol has been approved, most Serie A teams are already training in groups, but some are still keeping social distancing until Monday.
+
+            The FIGC, Government, Lega Serie A and Players’ Association finally reached an agreement on the medical protocol for contact training this week, after several versions were rejected.
+            
+            It has given them the option of working in games between ranks and reducing social distancing, but not everyone has taken that opportunity up yet.    
+        </p>
+        <p>Udinese started group training today, joining Inter, Milan, Napoli, Roma, Fiorentina, Sassuolo, Parma, Cagliari, Atalanta, Torino, Genoa and Lecce.
+            
+            The teams still maintaining some social distancing guidelines in training until next week are Juventus, Lazio, Hellas Verona, Brescia, Sampdoria, SPAL and Bologna.</p>
+        </div>
+</body>
+</html>

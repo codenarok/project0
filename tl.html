@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        h1   {color: blue;
+             text-align:center;
+             text-transform: uppercase;
+             }
+         p    {color: rgb(25, 145, 22);
+         text-indent: 4%;
+         padding: 3%;
+         }
+    </style>
+    <title>FootbaBlog</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">FootbaBlog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="pl.html">Premier League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tl.html">Turkish League</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sa.html">Serie A</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html"> Contact us </a>
+        </li>   
+      </ul>
+    </div>  
+  </nav>
+  <br>
+  <div class="container-md">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Position</th>
+            <th>Team Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">1.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/basaksehir_logo.png"> Istanbul Basaksehir SK</td>
+            <td class="points">59</td>
+        </tr>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">2.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/trabzonspor_logo.png"> Trabzonspor</td>
+            <td class="points">56</td>
+        </tr>
+        <tr class="" ng-repeat="team in teams.standing">
+            <td class="pos">3.</td> 
+            <td class="name"><img style = "width: 5%;"src="img/sivasspor_logo.png"> Sivasspor</td>
+            <td class="points">52</td>
+        </tr>
+    <tbody>
+</table>
+<h1>Turkish League Started</h1>
+        <p>The Turkish Football Federation announced on Thursday that the top-tier Super Lig games will resume on June 12.
+
+            The federation said that all preparations were completed after the decision to restart the matches on June 12 was taken "with a joint agreement and request of the federation and 18 Super Lig clubs" to complete the remaining part of the season.
+            
+            It added that semifinal second leg matches of the Ziraat Turkish Cup will be held on June 16 and 18.
+            </p>
+        </div>
+</body>
+</html>
